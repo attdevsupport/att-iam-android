@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/action_ImageAttachment"
+          android:icon="@drawable/ic_image"
+          android:title="Image Attachment"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/action_AudioAttachment"
+          android:icon="@drawable/ic_audio"
+          android:title="Audio Attachment"
+          android:showAsAction="always" />
+    
+    <item android:id="@+id/action_VideoAttachment"
+          android:icon="@drawable/ic_video"
+          android:title="Video Attachment"
+          android:showAsAction="always" />
+</menu>

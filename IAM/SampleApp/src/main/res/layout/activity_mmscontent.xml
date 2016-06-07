@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MMSContent" >
+
+    <TextView
+        android:id="@+id/mmsmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_mms_message"
+        android:layout_below="@+id/lbl_mms_message"
+        android:text="No Text Content .. "
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/lblImage"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mmsmessage"
+        android:layout_below="@+id/mmsmessage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/messagecontentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/mmsmessage"
+        android:layout_below="@+id/lblImage"
+        android:isScrollContainer="false" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/lbl_mms_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:text="MMS Message :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/messagecontentList"
+        android:layout_alignParentBottom="true"
+        android:text="Tap on the attachment list to view them."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

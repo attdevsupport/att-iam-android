@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src/com/att/api/consentactivity/UserConsentActivity.java" />
+    </issue>
+</lint>

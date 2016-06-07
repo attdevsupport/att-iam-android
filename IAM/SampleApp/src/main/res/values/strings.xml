@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">Conversations</string> -->
+    <string name="app_name">ATT InApp Messaging</string>
+    <string name="title_activity_conversationlist">Message List</string>
+    <string name="lbl_action_settings">Settings</string>
+    <string name="lbl_action_new_message">New Message</string>
+    <string name="lbl_action_attachments">Add Attachment</string>
+    <string name="lbl_action_send">Send Message</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_message">Compose</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_action_logout">Logout</string>
+    <string name="lbl_action_refresh">Refresh Message List</string>
+    <string name="btn_send">Send</string>
+    <string name="lbl_attachments">Attachments :</string>
+    <string name="hint_to">To</string>
+    <string name="hint_subject">Subject</string>
+    <string name="hint_message">Message</string>
+    <string name="lbl_broadcast">Send as broadcast</string>
+    <string name="title_activity_mmscontent">MMS Attachments</string>
+    <string name="title_activity_user_consent">User Consent</string>
+    <string name="title_close_application">"Closing the Application"</string>
+    <string name="title_debug_settings">"Debug Settings"</string>   
+    <string name="action_debug_settings">"Debug Settings"</string>   
+    <string name="title_access_token">"Access Token:"</string>
+    <string name="title_refresh_token">"Refresh Token:"</string>
+    <string name="title_access_token_expiry">"Token Expires In:"</string>
+    <string name="title_clear_preferences">"Clear Preferences"</string>
+    <string name="title_clear_cookies">"Clear Cookies"</string>
+    <string name="title_apply">"Apply"</string>
+    <string name="title_cancel">"Cancel"</string>
+    <string name="title_bypass_on_net">"By pass on-network"</string>
+    <string name="title_suppress_landing_page">"Suppress landing page"</string>
+    <string name="title_revoke_access_token">"Revoke access token"</string>
+    <string name="title_revoke_refresh_token">"Revoke refresh token"</string>
+</resources>

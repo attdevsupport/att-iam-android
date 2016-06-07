@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DebugSettingsPage" >
+
+    <LinearLayout
+        android:id="@+id/GetCurrentAccessToken"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/curACBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/title_access_token"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/curAC"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_edit_text_layout"
+            android:gravity="left|center_vertical"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/refreshTokenBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/title_refresh_token"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/refreshToken"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_edit_text_layout"
+            android:gravity="left|center_vertical"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/curACTimeBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/title_access_token_expiry"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/curACTime"
+            android:layout_width="140dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_edit_text_layout"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/forceOffNetCheckBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GetCurrentAccessToken"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_bypass_on_net"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/forceSuppressCheckBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forceOffNetCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_suppress_landing_page"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/clearPreferencesCheckBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forceSuppressCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_clear_preferences"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/clearCookiesCheckBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearPreferencesCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_clear_cookies"
+        android:textSize="16sp" />
+    
+    <CheckBox
+        android:id="@+id/revokeAccessTokenCheckBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearCookiesCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_revoke_access_token"
+        android:textSize="16sp" />
+    
+    <CheckBox
+        android:id="@+id/revokeRefreshTokenCheckBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/revokeAccessTokenCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_revoke_refresh_token"
+        android:textSize="16sp" />
+    
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_blue_2"
+        android:gravity="center"
+        android:text="@string/title_apply"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_blue_2"
+        android:gravity="center"
+        android:text="@string/title_cancel"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>
